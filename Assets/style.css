@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid green
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p {
+    font-size: 1.3em;
+}
+
+button {
+    outline: none;
+    background-color: aliceblue;
+    font-size: 1.3em;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+
+}
+
+.quiz-intro {
+    text-align: center;
+
+}
+
+.question-screen {
+    text-align: center;
+
+}
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.top-bar button {
+    float: right;
+
+}
