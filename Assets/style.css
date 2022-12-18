@@ -31,6 +31,10 @@ li {
 
 }
 
+.inner-container {
+    height: 100%
+}
+
 .quiz-intro {
     text-align: center;
 
