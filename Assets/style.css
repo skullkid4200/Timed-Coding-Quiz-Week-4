@@ -18,7 +18,6 @@ button {
     outline: none;
     background-color: aliceblue;
     font-size: 1.3em;
-
 }
 
 h1,
@@ -28,7 +27,6 @@ h2 {
 
 li {
     list-style: none;
-
 }
 
 .inner-container {
@@ -37,8 +35,6 @@ li {
     margin: 0 auto;
     display: block;
     visibility: visible;
-
-
 }
 
 .quiz-intro {
@@ -48,12 +44,41 @@ li {
 
 }
 
+/*V QUESTION SCREENS V*/
+
 #question1-screen {
     text-align: center;
     display: none;
     visibility: hidden;
 
 }
+
+#question2-screen {
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+#question3-screen {
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+#question4-screen {
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+#question5-screen {
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+
+/* GENERAL STYLING */
 
 .outer-container {
     padding: 10px;
@@ -69,23 +94,23 @@ li {
 
 }
 
+/* QUIZ LAST PAGE WITH SCORE AND FORM */
+
 .quiz-finish-screen {
     display: none;
     visibility: hidden;
-
-
 }
+
+
+/* HIGH SCORE SCREEN */
 
 .high-scores-screen {
     display: none;
     visibility: hidden;
     justify-content: center;
-
-
 }
 
 .high-scores-screen ol {
     overflow-y: scroll;
     max-height: 200px;
-
 }
