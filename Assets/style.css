@@ -32,16 +32,26 @@ li {
 }
 
 .inner-container {
-    height: 100%
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    visibility: visible;
+
+
 }
 
 .quiz-intro {
     text-align: center;
+    display: block;
+    visibility: visible;
 
 }
 
-.question-screen {
+#question1-screen {
     text-align: center;
+    display: none;
+    visibility: hidden;
 
 }
 
@@ -56,5 +66,26 @@ li {
 
 .top-bar button {
     float: right;
+
+}
+
+.quiz-finish-screen {
+    display: none;
+    visibility: hidden;
+
+
+}
+
+.high-scores-screen {
+    display: none;
+    visibility: hidden;
+    justify-content: center;
+
+
+}
+
+.high-scores-screen ol {
+    overflow-y: scroll;
+    max-height: 200px;
 
 }

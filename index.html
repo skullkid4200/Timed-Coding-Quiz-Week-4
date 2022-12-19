@@ -16,25 +16,52 @@
         </div>
 
         <div class="inner-container">
-            <header class="quiz-intro">
+            <header id="quiz-intro">
                 <h1>Welcome to Quiz!</h1>
                 <p>To start the quiz, click the button!</p>
                 <button id="startbtn" class="btn">Start!</button>
             </header>
 
             <main>
-                <section class="question-screen">
-                    <h2>Question goes here</h2>
+                <section id="question1-screen">
+                    <h2>What is the notation for an array?</h2>
                     <ul>
-                        <li><button>Answer 1</button></li>
-                        <li><button>Answer 2</button></li>
-                        <li><button>Answer 3</button></li>
-                        <li><button>Answer 4</button></li>
+                        <li><button onclick="wrongAnswer()">A. ( )</button></li>
+                        <li><button onclick="">B. " "</button></li>
+                        <li><button>C. [ ]</button></li>
+                        <li><button>D. ' '</button></li>
                     </ul>
                 </section>
 
-                <section class="quiz-finish-screen">
+                <!-- <section id="question2-screen">
+                    <h2>What is the notation for an array?</h2>
+                    <ul>
+                        <li><button onclick="wrongAnswer()">A. ( )</button></li>
+                        <li><button>B. " "</button></li>
+                        <li><button>C. [ ]</button></li>
+                        <li><button>D. ' '</button></li>
+                    </ul>
+                </section> -->
 
+                <section class="quiz-finish-screen">
+                    <h2>Quiz Finished!</h2>
+                    <p>Your Score: 00</p>
+                    <div>
+                        <label for="">Enter Initials</label>
+                        <input type="text">
+                        <button>Submit</button>
+                    </div>
+                </section>
+
+                <section class="high-scores-screen">
+                    <h2>High Scores</h2>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
                 </section>
 
             </main>
