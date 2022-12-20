@@ -96,7 +96,7 @@ li {
 
 /* QUIZ LAST PAGE WITH SCORE AND FORM */
 
-.quiz-finish-screen {
+#quiz-finish-screen {
     display: none;
     visibility: hidden;
 }

@@ -5,6 +5,7 @@ var questions3 = document.getElementById("question3-screen");
 var questions4 = document.getElementById("question4-screen");
 var questions5 = document.getElementById("question5-screen");
 var quizIntro = document.getElementById("quiz-intro")
+var finish = document.getElementById("quiz-finish-screen")
 var hideQuestions = true
 var currentQuestion = 0
 
@@ -46,35 +47,49 @@ function showQuestions1() {
 }
 
 function rightAnswer() {
-    currentQuestion++
     //1. store value
     //2. go to next question
     console.log(currentQuestion);
-    if (currentQuestion = 1) {
+    if (currentQuestion === 1) {
         questions2.style.display = "block";
         questions2.style.visibility = "visible";
         questions1.style.display = "none";
         questions1.style.visibility = "hidden";
-        currentQuestion++
     }
 
-    else if (currentQuestion = 2) {
+    else if (currentQuestion === 2) {
         console.log("coolbeans");
         questions3.style.display = "block";
         questions3.style.visibility = "visible";
         questions2.style.display = "none";
         questions2.style.visibility = "hidden";
-        currentQuestion++
+
     }
 
-    else if (currentQuestion = 3) {
+    else if (currentQuestion === 3) {
         questions4.style.display = "block";
         questions4.style.visibility = "visible";
         questions3.style.display = "none";
         questions3.style.visibility = "hidden";
-        currentQuestion++
+
     }
 
+    else if (currentQuestion === 4) {
+        questions5.style.display = "block";
+        questions5.style.visibility = "visible";
+        questions4.style.display = "none";
+        questions4.style.display = "hidden";
+
+    }
+
+    else if (currentQuestion === 5) {
+        questions5.style.display = "none";
+        questions5.style.visibility = "hidden";
+        showLastPage()
+    }
+
+
+    currentQuestion++
 }
 
 
@@ -82,13 +97,46 @@ function wrongAnswer() {
     //1. subtract time
     //2. add -1 to score
     //3. go to next question
-    if (currentQuestion = 1) {
+    if (currentQuestion === 1) {
         questions2.style.display = "block";
         questions2.style.visibility = "visible";
         questions1.style.display = "none";
         questions1.style.visibility = "hidden";
-        currentQuestion++
     }
+
+    else if (currentQuestion === 2) {
+        console.log("coolbeans");
+        questions3.style.display = "block";
+        questions3.style.visibility = "visible";
+        questions2.style.display = "none";
+        questions2.style.visibility = "hidden";
+
+    }
+
+    else if (currentQuestion === 3) {
+        questions4.style.display = "block";
+        questions4.style.visibility = "visible";
+        questions3.style.display = "none";
+        questions3.style.visibility = "hidden";
+
+    }
+
+    else if (currentQuestion === 4) {
+        questions5.style.display = "block";
+        questions5.style.visibility = "visible";
+        questions4.style.display = "none";
+        questions4.style.display = "hidden";
+
+    }
+
+    else if (currentQuestion === 5) {
+        questions5.style.display = "none";
+        questions5.style.visibility = "hidden";
+        showLastPage()
+    }
+
+
+    currentQuestion++
 
 }
 
@@ -96,6 +144,9 @@ function wrongAnswer() {
 
 function showLastPage() {
     if (currentQuestion >= 5) {
+        finish.style.display = "block";
+        finish.style.visibility = "visible";
+
         //1. hide current page
         //2. display last page
         //3. display stored value
